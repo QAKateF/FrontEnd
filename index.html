@@ -29,17 +29,74 @@ My name is Dave.
     <span>+</span>
     <input type="number" id="operand2">
     <span>=</span>
-    <span id="result"></span>
+    <span id="result1"></span>
 </div>
 <script>
     let operand1 = document.querySelector('#operand1');
     let operand2 = document.querySelector('#operand2');
     let sumBtn = document.querySelector('#sumBtn');
-    let result = document.querySelector('#result');
+    let result1 = document.querySelector('#result1');
     sumBtn.onclick = function(){
-    res = +operand1.value + +operand2.value;
-    result.innerText = res;
-    console.log(res);
+    res1 = +operand1.value + +operand2.value;
+    result1.innerText = res1;
+    console.log(res1);
+    }
+</script>
+<div>
+    <button id="subBtn">Subt</button>
+    <input type="number" id="operand3">
+    <span> - </span>
+    <input type="number" id="operand4">
+    <span> = </span>
+    <span id="result2"></span>
+</div>
+<script>
+    let operand3 = document.querySelector('#operand3');
+    let operand4 = document.querySelector('#operand4');
+    let subBtn = document.querySelector('#subBtn');
+    let result2 = document.querySelector('#result2');
+    subBtn.onclick = function(){
+    res2 = +operand3.value - +operand4.value;
+    result2.innerText = res2;
+    console.log(res2);
+    }
+</script>
+<div>
+    <button id="divBtn">Divi</button>
+    <input type="number" id="operand5">
+    <span> / </span>
+    <input type="number" id="operand6">
+    <span> = </span>
+    <span id="result3"></span>
+</div>
+<script>
+    let operand5 = document.querySelector('#operand5');
+    let operand6 = document.querySelector('#operand6');
+    let divBtn = document.querySelector('#divBtn');
+    let result3 = document.querySelector('#result3');
+    divBtn.onclick = function(){
+    res3 = +operand5.value / +operand6.value;
+    result3.innerText = res3;
+    console.log(res3);
+    }
+</script>
+<div>
+    <button id="mulBtn">Mul</button>
+    <input type="number" id="operand7">
+    <span> * </span>
+    <input type="number" id="operand8">
+    <span> = </span>
+    <span id="result4"></span>
+</div>
+<script>
+    let operand7 = document.querySelector('#operand7');
+    let operand8 = document.querySelector('#operand8');
+    let mulBtn = document.querySelector('#mulBtn');
+    let result4 = document.querySelector('#result4');
+    mulBtn.onclick = function(){
+    res4 = +operand7.value * +operand8.value;
+    result4.innerText = res4;
+    console.log(res4);
     }
 </script>
 </body>
