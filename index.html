@@ -12,12 +12,18 @@
     color: green;
     font-weight: bold;
     }
+    .orange {
+    background: orange;
+    }
+    #result1 { background: black;
+    color: white;
+    }
     </style>
 </head>
 <body>
 <h1>DocumentObjectModel</h1>
 <div>Roses are red,</div>
-My name is Dave.
+<h3 class ="orange"> My name is Dave.<h3/>
 <p></p>
 <div id="mydiv"> This poem makes no sense.
 <span style="color: blue">Microwave!</span>
@@ -25,7 +31,7 @@ My name is Dave.
 <hr>
 <div>
     <button id="sumBtn">Sum</button>
-    <input type="number" id="operand1">
+    <input type="number" id="operand1" class="orange">
     <span>+</span>
     <input type="number" id="operand2">
     <span>=</span>
@@ -87,6 +93,10 @@ My name is Dave.
     <input type="number" id="operand8">
     <span> = </span>
     <span id="result4"></span>
+    <hr>
+    <input type="password">
+    <input type="submit">
+    <input type="checkbox">
 </div>
 <script>
     let operand7 = document.querySelector('#operand7');
